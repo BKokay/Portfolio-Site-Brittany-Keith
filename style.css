@@ -39,3 +39,13 @@ h4 {
 img {
   width: 100%;
 }
+
+div {
+  background: pink;
+}
+
+span {
+  color: yellow;
+  font-size: 40px;
+  font-weight:lighter;
+}
