@@ -1,15 +1,16 @@
 /*
 Colors used:
-background (cultured): #f6f4f4
-background highlight (dark slate grey):#334846
+background (platinum): #EDE9E9
+Divs (cultured):#F6F4F4
 text (xiketic): #030412
-accent 1 (razzmic berry): #9c528b
-accent 2 (gold): #b17405
+links (midnight blue): #0f1457
+links-hover-state (persian blue): #2e39dc
+accent (fuchsia crayola): #cb48b7
 */
 body {
-  background-color: #f6f4f4;
+  background-color: #EDE9E9;
   font-family: 'Montserrat', sans-serif;
-  font-family: 'Ubuntu'sans-serif;
+  font-family: 'Playfair Display', serif
 }
 
 h1, h2, h3, h4 {
@@ -41,11 +42,50 @@ img {
 }
 
 div {
-  background: pink;
+  background: #F6F4F4;
 }
 
 span {
-  color: yellow;
+  color: #CB48B7;
   font-size: 40px;
   font-weight:lighter;
+}
+
+a {
+  color: #0f1457;
+  text-decoration: none; /* changes call me */
+}
+
+a:hover,
+a:focus {
+  color: #515AE1;
+  text-decoration: underline;
+}
+a:active { /* selected link */
+  color: #0f1457;
+}
+.button {
+  display: inline-block;
+  background-color: #0f1457;
+  color: #ffffff;
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #0f1457;
+  transition: 0.2s opacity;
+}
+.button:hover {
+  opacity: 0.8;
+  color: #ffffff;
+  text-decoration: none;
+}
+.button.contact{
+  background-color: transparent;
+  color: #0f1457;
+  text-transform: uppercase;
+  border: 2px solid #0f1457
+}
+.button.contact:hover{
+  background-color: #151b7a;
+  color: #ffffff;
 }
