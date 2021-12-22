@@ -12,6 +12,9 @@ accent (fuchsia crayola): #cb48b7
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background-color: #EDE9E9;
@@ -20,7 +23,7 @@ body {
 }
 
 h1, h2, h3, h4 {
-    font-family: Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua, Georgia, serif;
+  font-family: Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua, Georgia, serif;
   line-height: 1.4;
 }
 
@@ -61,7 +64,8 @@ div {
 
 a {
   color: #668586;
-  text-decoration: none; /* changes call me */
+  text-decoration: none;
+  /* changes call me */
 }
 
 a:hover,
@@ -69,9 +73,12 @@ a:focus {
   color: #4F6869;
   text-decoration: underline;
 }
-a:active { /* selected link */
+
+a:active {
+  /* selected link */
   color: #4F6869;
 }
+
 .button {
   display: inline-block;
   background-color: #607F80;
@@ -83,42 +90,44 @@ a:active { /* selected link */
   border-bottom: 2px solid #4F6869;
   transition: 0.2s opacity;
 }
+
 .button:hover {
   opacity: 0.8;
   color: #ffffff;
   text-decoration: none;
 }
-.button.contact{
+
+.button.contact {
   background-color: transparent;
   color: #668586;
   text-transform: uppercase;
   text-transform: bolder;
   border: 2px solid #668586
 }
-.button.contact:hover{
+
+.button.contact:hover {
   background-color: #668586;
   color: #ffffff;
 }
 
 /* Layout styling */
-
 .container {
   padding: 0 15px;
   text-align: center;
 }
 
-.row{
-  margin:25px 0;
+.row {
+  margin: 25px 0;
 }
 
 #work .row {
-  padding-bottom: 25px; border-bottom: 1px solid #4F6869;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4F6869;
 }
 
 #hero h1 {
   text-align: center;
-  background-color: #f6f4f4
-  padding: 20px 0;
+  background-color: #f6f4f4 padding: 20px 0;
   display: inline-block;
   width: 100%;
 }
@@ -127,7 +136,7 @@ a:active { /* selected link */
   text-align: center;
 }
 
-.logo{
+.logo {
   max-width: 30px;
   text-align: center;
   display: inline-block;
@@ -138,32 +147,36 @@ header {
   text-align: center;
   padding: 10px 0;
   -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
--moz-box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.75);
-box-shadow:         7px 7px 5px 0px rgba(50, 50, 50, 0.75);
-position: fixed;
-width: 100%;
+  -moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  position: fixed;
+  width: 100%;
 }
 
-main{
+main {
   padding-top: 133px;
 }
 
-nav > ul {
+nav>ul {
   list-style-type: none;
   padding: 0;
 }
 
-nav > ul > li {
+nav>ul>li {
   display: inline-block;
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #607f80;
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
   color: #4F6869;
+}
+
+.list{
+  text-align: left;
 }
