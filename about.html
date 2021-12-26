@@ -13,15 +13,18 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body id="about-page">
   <header>
-    <div>
+
       <div class="logo">
-        <img src="img/logo.png" alt="logo">
-        </div>
+          <img src="img/logo.png" alt="logo">
       <a href="index.html">BRITTANY KEITH</a>
+    </div>
+
+    <div>
+
       <nav>
-        <ul>
+        <ul class="navigation">
           <li><a href="index.html">Work</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -34,8 +37,8 @@
       <div class="container">
       <div>
         <picture>
-          <source srcset="img/profile/profile_picture.jpg" media="(max-width:767px)">
-          <img src="img/profile/profile_picture.jpg" alt="My Image">
+          <source class ="resize" srcset="img/profile/profile_picture.jpg" media="(max-width:767px)">
+          <img  class="resize" src="img/profile/profile_picture.jpg" alt="My Image">
         </picture>
       </div>
       <div>
@@ -62,7 +65,7 @@
         </div>
           <div>
             <h2> Skills & Tools </h2>
-            <div>
+            <div class="col-md-6">
               <h3> Relevant Skills</h3>
               <ul class="list">
                 <li>User research, persona building, user flows, competitive analysis, flowchart diagrams, site maps, content auditing</li>
