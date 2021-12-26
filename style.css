@@ -18,18 +18,25 @@ html {
 
 body {
   background-color: #EDE9E9;
-  font-family: Verdana, Geneva, sans-serif;
-  color: #121517;
+  font-family: 'Arvo' serif;
+  color: #242D2D;
+}
+
+p{
+  color: #242d2d;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.75;
+  margin-bottom: 2em;
 }
 
 h1, h2, h3, h4 {
-  font-family: Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua, Georgia, serif;
-  line-height: 1.4;
-}
-
-h1 {
-  font-size: 2.75em;
+  font-family: 'Oswald', sans-serif;
+  font-size: 3rem;
+  line-height: 1.15;
   font-weight: 700;
+  margin-top: .5em;
+  margin-bottom: .5em;
 }
 
 h2 {
@@ -56,10 +63,11 @@ div {
 }
 
 #hero span {
-  color: #7E4E57;
+  color: #6667AA;
   font-size: 50px;
   font-weight: bolder;
   text-transform: uppercase;
+  display: block;
 }
 
 a {
@@ -81,14 +89,15 @@ a:active {
 
 .button {
   display: inline-block;
-  background-color: #607F80;
+  background-color: #668586;
   color: #ffffff;
   text-transform: uppercase;
   font-weight: 500px;
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #4F6869;
-  transition: 0.2s opacity;
+  transition: 0.2s;
+  transition-property: opacity;
 }
 
 .button:hover {
@@ -102,7 +111,7 @@ a:active {
   color: #668586;
   text-transform: uppercase;
   text-transform: bolder;
-  border: 2px solid #668586
+  border: 2px solid #668586;
 }
 
 .button.contact:hover {
@@ -136,10 +145,38 @@ a:active {
   text-align: center;
 }
 
-.logo {
-  max-width: 30px;
-  text-align: center;
-  display: inline-block;
+.logo{
+
+display: flex;
+flex-direction: row;
+justify-content: flex-start
+}
+
+.logo img {
+max-width: 30px;
+margin-right: 5px;
+margin-left: 15px;
+}
+
+.logo a {
+text-decoration: none;
+margin-top: 25px;
+
+}
+
+@media only screen and (min-width: 640px){
+.logo{
+
+display: flex;
+flex-direction: row;
+justify-content: center
+
+}
+
+.logo img {
+margin-left: 0px;
+}
+
 }
 
 header {
@@ -171,6 +208,7 @@ nav>ul>li>a {
   text-transform: uppercase;
   font-weight: 700;
   color: #607f80;
+  line-height: 1.5;
 }
 
 nav>ul>li>a {
@@ -179,4 +217,76 @@ nav>ul>li>a {
 
 .list{
   text-align: left;
+}
+
+img.resize{
+  max-width: 30%;
+  max-height: 30%;
+}
+
+@media only screen and (min-width: 640px) {
+
+}
+
+@media only screen and (min-width: 1024px) {
+  header {
+  text-align: unset;
+  padding: 20px 0 13px;
+}
+nav{
+  width: auto;
+  float: right;
+  margin-top: 4px;
+}
+.col-md-6 {
+  width: 50%;
+}
+
+}
+
+@media only screen and (min-width: 1440px) {
+  header {
+  text-align: unset;
+  padding: 20px 0 13px;
+}
+nav{
+  width: auto;
+  float: right;
+  margin-top: 4px;
+}
+.col-md-6 {
+  float: left;
+  width: 40%;
+}
+
+.col-lg-7 {
+  float: right;
+  width: 60%;
+}
+
+.col-lg-5 {
+  float: right;
+  width: 60%;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+}
+
+.row::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#about-page h3 {
+  margin-top: 0;
 }
