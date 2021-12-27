@@ -7,7 +7,7 @@
   <title>Brittany Keith | UX Designer</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous"
     referrerpolicy="no-referrer" />
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
@@ -68,7 +68,8 @@
           </div>
           <div>
             <h2> Skills & Tools </h2>
-            <div class="col-md-6">
+            <div id="skills-tools">
+            <div>
               <h3> Relevant Skills</h3>
               <ul class="list">
                 <li>User research, persona building, user flows, competitive analysis, flowchart diagrams, site maps, content auditing</li>
@@ -76,7 +77,7 @@
                 <li>Color theory & typography, style guide, pattern librarys</li>
               </ul>
             </div>
-          </div>
+
           <div>
             <h3> Tools I Use</h3>
             <ul class="list">
@@ -89,11 +90,13 @@
             </ul>
           </div>
         </div>
+        </div>
       </div>
+    </div>
     </div>
   </main>
   <footer id="contact">
-    <div>
+    <div class="container">
       <h2> Let's Connect </h2>
       <p>
         If you want to chat, don't be shy to drop me a line.
@@ -102,28 +105,42 @@
         <a href="mailto:bkinux@gmail.com" class="button contact"> Email Me</a>
       </div>
       <div>
-        <a href="tel:+4901703833648"> Call me</a>
+        <p>
+          <a href="tel:+4901703833648"> Call me</a>
+        </p>
       </div>
-      <div>
-        <a href="http://www.linkedin.com/in/brittany-keith" target="_blank">
-          <svg viewBox="0 0 512 512">
-            <path
-              d="M186.4 142.4c0 19-15.3 34.5-34.2 34.5 -18.9 0-34.2-15.4-34.2-34.5 0-19 15.3-34.5 34.2-34.5C171.1 107.9 186.4 123.4 186.4 142.4zM181.4 201.3h-57.8V388.1h57.8V201.3zM273.8 201.3h-55.4V388.1h55.4c0 0 0-69.3 0-98 0-26.3 12.1-41.9 35.2-41.9 21.3 0 31.5 15 31.5 41.9 0 26.9 0 98 0 98h57.5c0 0 0-68.2 0-118.3 0-50-28.3-74.2-68-74.2 -39.6 0-56.3 30.9-56.3 30.9v-25.2H273.8z" />
-          </svg>
-        </a>
-        <a href="http://twitter.com/bkinux" target="_blank">
-          <svg xmlns="http://www.w3.org/2000/svg" width="260" height="220" viewBox="0 0 26 22">
-            <title>Twitter logo optimized by @elliz</title>
-            <path fill="inherit"
-              d="M.5 18.7c10 6.2 22.7-.7 22.5-13 1-.7 1.9-1.6 2.6-2.7-1 .5-2 .8-3.1.9 1.14-.7 2-1.7 2.4-2.9-1 .6-2 1-3.3 1.3-4.3-4.13-10 .3-8.8 4.7-4.3-.2-8-2.3-10.6-5.4C1 4 1.5 7.1 3.9 8.5 3 8.4 2 8.2 1.5 7.8c0 2.6 1.8 4.6 4.1 5.1-.8.2-1.5.3-2.3.1.6 2 2.6 3.6 4.8 3.6-2 1.6-4.7 2.4-7.6 2.1z" />
-          </svg>
-        </a>
-        <a href="http://www.medium.com/@keith.brittany" target="_blank">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1043.63 592.71">
-            <path
-              d="M588.67 296.36c0 163.67-131.78 296.35-294.33 296.35S0 460 0 296.36 131.78 0 294.34 0s294.33 132.69 294.33 296.36m322.89 0c0 154.06-65.89 279-147.17 279s-147.17-124.94-147.17-279 65.88-279 147.16-279 147.17 124.9 147.17 279m132.08 0c0 138-23.17 249.94-51.76 249.94s-51.75-111.91-51.75-249.94 23.17-249.94 51.75-249.94 51.76 111.9 51.76 249.94" />
-          </svg>
-        </a>
+      <div class="container">
+        <div class="social">
+          <span>
+            <a href="http://www.linkedin.com/in/brittany-keith" target="_blank">
+              <svg viewBox="0 50 512 512" >
+         <path fill="#000000" d="M150.65,100.682c0,27.992-22.508,50.683-50.273,50.683c-27.765,0-50.273-22.691-50.273-50.683
+         C50.104,72.691,72.612,50,100.377,50C128.143,50,150.65,72.691,150.65,100.682z M143.294,187.333H58.277V462h85.017V187.333z
+         M279.195,187.333h-81.541V462h81.541c0,0,0-101.877,0-144.181c0-38.624,17.779-61.615,51.807-61.615
+         c31.268,0,46.289,22.071,46.289,61.615c0,39.545,0,144.181,0,144.181h84.605c0,0,0-100.344,0-173.915
+         s-41.689-109.131-99.934-109.131s-82.768,45.369-82.768,45.369V187.333z"/>
+       </svg>
+              </svg>
+            </a>
+          </span>
+          <span>
+            <a href="http://twitter.com/bkinux" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 26 22">
+                <title>Twitter logo optimized by @elliz</title>
+                <path fill="inherit"
+                  d="M.5 18.7c10 6.2 22.7-.7 22.5-13 1-.7 1.9-1.6 2.6-2.7-1 .5-2 .8-3.1.9 1.14-.7 2-1.7 2.4-2.9-1 .6-2 1-3.3 1.3-4.3-4.13-10 .3-8.8 4.7-4.3-.2-8-2.3-10.6-5.4C1 4 1.5 7.1 3.9 8.5 3 8.4 2 8.2 1.5 7.8c0 2.6 1.8 4.6 4.1 5.1-.8.2-1.5.3-2.3.1.6 2 2.6 3.6 4.8 3.6-2 1.6-4.7 2.4-7.6 2.1z" />
+              </svg>
+            </a>
+          </span>
+          <span>
+            <a href="http://www.medium.com/@keith.brittany" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1043.63 592.71">
+                <path
+                  d="M588.67 296.36c0 163.67-131.78 296.35-294.33 296.35S0 460 0 296.36 131.78 0 294.34 0s294.33 132.69 294.33 296.36m322.89 0c0 154.06-65.89 279-147.17 279s-147.17-124.94-147.17-279 65.88-279 147.16-279 147.17 124.9 147.17 279m132.08 0c0 138-23.17 249.94-51.76 249.94s-51.75-111.91-51.75-249.94 23.17-249.94 51.75-249.94 51.76 111.9 51.76 249.94" />
+              </svg>
+            </a>
+          </span>
+        </div>
       </div>
       <div>
         <p> Copyright Brittany Keith 2021 </p>
