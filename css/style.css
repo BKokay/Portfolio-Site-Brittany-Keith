@@ -2,24 +2,41 @@
 Colors used:
 background (platinum): #EDE9E9
 Divs (cultured):#F6F4F4
-text (xiketic): #030412
-links (midnight blue): #0f1457
-links-hover-state (persian blue): #2e39dc
+text (Eerie Black): #121517
+links (Steel Teal): #607f80
+links-hover-state (deep space sparkle): #4f6869
+button (steel teal): #607F80
 accent (fuchsia crayola): #cb48b7
 */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #EDE9E9;
-  font-family: 'Montserrat', sans-serif;
-  font-family: 'Playfair Display', serif
+  font-family: 'Arvo'serif;
+  color: #242D2D;
+}
+
+p {
+  color: #242d2d;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.75;
+  margin-bottom: 2em;
 }
 
 h1, h2, h3, h4 {
-  line-height: 1.4;
-}
-
-h1 {
-  font-size: 2.75em;
+  font-family: 'Oswald', sans-serif;
+  font-size: 3rem;
+  line-height: 1.15;
   font-weight: 700;
+  margin-top: .5em;
+  margin-bottom: .5em;
 }
 
 h2 {
@@ -45,47 +62,320 @@ div {
   background: #F6F4F4;
 }
 
-span {
-  color: #CB48B7;
-  font-size: 40px;
-  font-weight:lighter;
+#hero span {
+  color: #6667AA;
+  font-size: 50px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  display: block;
 }
 
 a {
-  color: #0f1457;
-  text-decoration: none; /* changes call me */
+  color: #668586;
+  text-decoration: none;
+  /* changes call me */
 }
 
 a:hover,
 a:focus {
-  color: #515AE1;
+  color: #4F6869;
   text-decoration: underline;
 }
-a:active { /* selected link */
-  color: #0f1457;
+
+a:active {
+  /* selected link */
+  color: #4F6869;
 }
+
 .button {
   display: inline-block;
-  background-color: #0f1457;
+  background-color: #668586;
   color: #ffffff;
-  font-weight: 400;
+  text-transform: uppercase;
+  font-weight: 500px;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #0f1457;
+  border-bottom: 2px solid #4F6869;
   transition: 0.2s opacity;
 }
+
 .button:hover {
   opacity: 0.8;
   color: #ffffff;
   text-decoration: none;
 }
-.button.contact{
+
+.button.contact {
   background-color: transparent;
-  color: #0f1457;
+  color: #668586;
   text-transform: uppercase;
-  border: 2px solid #0f1457
+  text-transform: bolder;
+  border: 2px solid #668586;
 }
-.button.contact:hover{
-  background-color: #151b7a;
+
+.button.contact:hover {
+  background-color: #668586;
   color: #ffffff;
+}
+
+/* Layout styling */
+.container {
+  padding: 0 15px;
+  text-align: center;
+}
+
+.row {
+  margin: 25px 0;
+}
+
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4F6869;
+}
+
+#hero h1 {
+  text-align: center;
+  background-color: #f6f4f4 padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#work h2 {
+  text-align: center;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start
+}
+
+.logo img {
+  max-width: 30px;
+  margin-right: 5px;
+  margin-left: 15px;
+}
+
+.logo a {
+  text-decoration: none;
+  margin-top: 25px;
+}
+
+@media only screen and (min-width: 640px) {
+  .logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center
+  }
+
+  .logo img {
+    margin-left: 0px;
+  }
+}
+
+header {
+  background-color: #F6F4F4;
+  text-align: center;
+  padding: 10px 0;
+  -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  position: fixed;
+  width: 100%;
+}
+
+main {
+  padding-top: 163px;
+}
+
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav>ul>li {
+  display: inline-block;
+}
+
+nav>ul>li>a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #607f80;
+  line-height: 1.5;
+}
+
+nav>ul>li>a {
+  color: #4F6869;
+}
+
+#skills-tools {
+    display: inline-block;
+}
+#skills-tools h3 {
+  text-align: left;
+}
+.list {
+  text-align: left;
+}
+
+img.resize {
+  max-width: 30%;
+  max-height: 30%;
+}
+
+@media only screen and (min-width: 640px) {
+}
+
+@media only screen and (min-width: 1024px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  .col-md-6 {
+    float: left;
+    width: 40%;
+  }
+
+  .col-lg-7 {
+    float: right;
+    width: 60%;
+  }
+
+  .col-lg-5 {
+    float: right;
+    width: 60%;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#about-page h3 {
+  margin-top: 0;
+}
+
+#about-picture {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+footer .social {
+display: inline-flex;
+
+}
+
+footer .social a{
+margin: 0 5px;
+cursor: pointer;
+
+}
+
+footer .social a svg:hover{
+transition: 0.2s;
+transform: scale(1.1);
+}
+
+footer .social a svg{
+margin: 0 10px;
+height: 40px;
+width: auto;
+}
+
+/* animation @keyframes tells how then .element tells what*/
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
+}
+
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+
+.cloud-front {
+  animation-duration: 15s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+
+.cloud-back {
+  animation-duration: 30s;
+  animation-name: cloud-move-reverse;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
 }
