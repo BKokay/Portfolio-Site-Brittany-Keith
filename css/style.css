@@ -78,13 +78,8 @@ a {
 
 a:hover,
 a:focus {
-  color: #4F6869;
+  color: #0A8B8F;
   text-decoration: underline;
-}
-
-a:active {
-  /* selected link */
-  color: #4F6869;
 }
 
 .button {
@@ -190,7 +185,7 @@ main {
 
 nav>ul {
   list-style-type: none;
-  padding: 0;
+  padding: 0px;
 }
 
 nav>ul>li {
@@ -212,11 +207,20 @@ nav>ul>li>a {
 #skills-tools {
     display: inline-block;
 }
+
 #skills-tools h3 {
   text-align: left;
 }
-.list {
+
+#skills-tools .list1 li {
   text-align: left;
+  list-style-type: square;
+  margin: 10px;
+}
+#skills-tools .list2 li {
+  text-align: left;
+  list-style-type: square;
+  margin: 10px;
 }
 
 img.resize {
