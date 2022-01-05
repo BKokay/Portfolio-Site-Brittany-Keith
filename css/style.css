@@ -170,7 +170,7 @@ a:focus {
 
 header {
   background-color: #F6F4F4;
-  padding: 10px 0;
+  padding: 10px 0 4px;
   -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
   -moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
   box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
@@ -179,12 +179,13 @@ header {
 }
 
 main {
-  padding-top: 163px;
+  padding-top: 80px;
 }
 
 nav>ul {
   list-style-type: none;
   padding: 0px;
+  margin: 0;
 }
 
 nav>ul>li {}
@@ -214,6 +215,7 @@ nav>ul>li>a {
   right: 0;
   top: 2px;
   font-size: 20px;
+  padding-right: 0;
 }
 
 #skills-tools {
@@ -246,6 +248,10 @@ img.resize {
     display: inline-block;
   }
 
+  nav > ul {
+    margin: 1em 0;
+  }
+
   .navtoggle li:not(:last-child) {
     display: inline-block;
   }
@@ -253,6 +259,7 @@ img.resize {
   .navtoggle li:last-child {
     display: none;
   }
+
 }
 
 @media only screen and (min-width: 1024px) {
