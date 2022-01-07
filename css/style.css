@@ -62,6 +62,10 @@ div {
   background: #F6F4F4;
 }
 
+.navtoggle.responsive li {
+  display: block;
+}
+
 #hero span {
   color: #6667AA;
   font-size: 50px;
@@ -156,6 +160,11 @@ a:focus {
   margin-top: 25px;
 }
 
+.menu img {
+  max-width: 30px;
+  max-height: 30px;
+}
+
 @media only screen and (min-width: 640px) and (max-width: 150px) {
   .logo {
     display: flex;
@@ -166,6 +175,7 @@ a:focus {
   .logo img {
     margin-left: 0px;
   }
+
 }
 
 header {
@@ -187,7 +197,6 @@ nav>ul {
   padding: 0px;
   margin: 0;
 }
-
 nav>ul>li {}
 
 nav>ul>li>a {
@@ -210,10 +219,10 @@ nav>ul>li>a {
   position: relative;
 }
 
-.navtoggle li .icon {
+.navtoggle li .menu {
   position: absolute;
   right: 0;
-  top: 2px;
+  top: 25px;
   font-size: 20px;
   padding-right: 0;
 }
