@@ -31,35 +31,39 @@ p {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 4rem;
+  text-transform: capitalize;
   line-height: 1.15;
-  font-weight: 500;
+  font-weight: 600;
+  margin-top: .5em;
+  margin-bottom: .5em;
+  color: #668586
+}
+
+h3, h4 {
+  font-family: 'Oswald', sans-serif;
+  line-height: 1.15;
   margin-top: 2em;
   margin-bottom: .5em;
 }
 
-h2, h3, h4 {
-  font-family: 'Oswald', sans-serif;
-  font-size: 3rem;
-  line-height: 1.15;
-  font-weight: 700;
-  margin-top: .5em;
-  margin-bottom: .5em;
-}
-
 h2 {
-  font-size: 2.25em;
+  font-size: 3em;
   font-weight: 700;
+  padding-top: 30px;
+  line-height: 2em;
 }
 
 h3 {
-  font-size: 1.75em;
-  font-weight: 400;
+  font-size: 2.5em;
+  font-weight: 700;
 }
 
 h4 {
   font-size: 1.35em;
   font-weight: 400;
+  line-height: 2em;
+  padding-top: 15px;
 }
 
 img {
@@ -75,10 +79,11 @@ div {
 }
 
 #hero span {
-  color: #6667AA;
+  color: #668586;
   font-size: 50px;
   font-weight: 600;
   text-transform: uppercase;
+  text-shadow: 1px 1px #526a6b;
   display: block;
 }
 
@@ -99,10 +104,9 @@ a:focus {
   background-color: #668586;
   color: #ffffff;
   text-transform: uppercase;
-  font-weight: 500px;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #4F6869;
+  border-bottom: 1px solid #4F6869;
   transition: 0.2s opacity;
 }
 
@@ -142,13 +146,6 @@ a:focus {
 #work .row {
   padding-bottom: 25px;
   border-bottom: 1px solid #4F6869;
-}
-
-#hero h1 {
-  text-align: center;
-  background-color: #f6f4f4 padding: 20px 0;
-  display: inline-block;
-  width: 100%;
 }
 
 #work h2 {
@@ -311,6 +308,10 @@ img.resize {
     margin-top: 4px;
   }
 
+  main {
+    padding-top: 80px;
+  }
+
   .col-md-6 {
     width: 50%;
   }
@@ -326,6 +327,10 @@ img.resize {
     width: auto;
     float: right;
     margin-top: 4px;
+  }
+
+  main {
+    padding-top: 80px;
   }
 
   .col-md-6 {
