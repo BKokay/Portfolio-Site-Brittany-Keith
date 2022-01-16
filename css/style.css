@@ -18,7 +18,7 @@ html {
 
 body {
   background-color: #EDE9E9;
-  font-family: 'Oswald', sans-serif;
+font-family: 'Be Vietnam Pro', sans-serif;
   color: #242D2D;
 }
 
@@ -30,40 +30,42 @@ p {
   margin-bottom: 3em;
 }
 
-h1 {
-  font-size: 4rem;
-  text-transform: capitalize;
-  line-height: 1.15;
-  font-weight: 600;
-  margin-top: .5em;
-  margin-bottom: .5em;
-  color: #668586
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.4;
 }
 
-h3, h4 {
-  font-family: 'Oswald', sans-serif;
-  line-height: 1.15;
-  margin-top: 2em;
-  margin-bottom: .5em;
+h1 {
+  font-size: 1.875em;
+  font-weight: 700;
+  color: #000;
 }
 
 h2 {
-  font-size: 3em;
+  font-size: 1.65em;
   font-weight: 700;
-  padding-top: 30px;
-  line-height: 2em;
+  color: #000;
+  text-transform: uppercase;
 }
 
 h3 {
-  font-size: 2.5em;
+  font-size: 1.45em;
   font-weight: 700;
 }
 
 h4 {
   font-size: 1.35em;
   font-weight: 400;
-  line-height: 2em;
-  padding-top: 15px;
+  color: #000;
+  padding-top: 50px;
+}
+
+h5 {
+  font-size: 1em;
+  font-weight: 700;
+  margin: 0;
 }
 
 img {
@@ -78,13 +80,9 @@ div {
   display: block;
 }
 
-#hero span {
-  color: #668586;
-  font-size: 50px;
-  font-weight: 600;
-  text-transform: uppercase;
-  text-shadow: 1px 1px #526a6b;
-  display: block;
+#hero{
+  margin-top: 70px;
+  padding-top: 3px;
 }
 
 a {
@@ -148,6 +146,10 @@ a:focus {
   border-bottom: 1px solid #4F6869;
 }
 
+#skills-tools {
+    border-bottom: 1px solid #4F6869;
+}
+
 #work h2 {
   text-align: center;
 }
@@ -159,7 +161,7 @@ a:focus {
 }
 
 .logo img {
-  max-width: 30px;
+  max-width: 60px;
   margin-right: 5px;
   margin-left: 15px;
 }
@@ -191,8 +193,8 @@ header {
   background-color: #F6F4F4;
   margin-top: -8px;
   margin-left: -8px;
-  margin-bottom: 10px;
-  padding: 10px 0 4px;
+  margin-bottom: 14px;
+  padding: 10px 0 14px;
   -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
   -moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
   box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.75);
@@ -236,7 +238,8 @@ nav>ul>li>a {
   right: 0;
   top: 25px;
   font-size: 20px;
-  padding-right: 10px;
+  padding-right: 20px;
+  padding-top: 35px;
 }
 
 .navtoggle.responsive nav {
@@ -326,11 +329,15 @@ img.resize {
   nav {
     width: auto;
     float: right;
-    margin-top: 4px;
+    margin-top: -75px;
   }
 
   main {
     padding-top: 80px;
+  }
+
+  h1{
+    font-size: 3em;
   }
 
   .col-md-6 {
