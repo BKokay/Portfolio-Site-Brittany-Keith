@@ -84,6 +84,10 @@ div {
   display: block;
 }
 
+.picture {
+  margin-top: 75px;
+}
+
 #hero {
   margin-top: 70px;
   padding-top: 3px;
