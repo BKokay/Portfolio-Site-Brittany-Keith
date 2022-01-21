@@ -80,6 +80,10 @@ div {
   display: block;
 }
 
+.picture {
+  margin-top: 75px;
+}
+
 #hero {
   margin-top: 70px;
   padding-top: 3px;
@@ -310,7 +314,7 @@ img.resize {
     text-align: unset;
     padding: 20px 0 13px;
   }
- 
+
   nav {
     width: auto;
     float: right;
