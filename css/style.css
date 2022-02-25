@@ -218,7 +218,6 @@ nav>ul {
   margin: 0;
 }
 
-nav>ul>li {}
 
 nav>ul>li>a {
   padding: 0 15px;
@@ -486,3 +485,5 @@ footer .social a svg {
   animation-direction: alternate;
   animation-timing-function: linear;
 }
+
+
